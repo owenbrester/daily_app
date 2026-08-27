@@ -98,7 +98,6 @@ def handle_streak(state, went):
         state["rest_used"] = False
         return 0
 
-    #Didn't go gym
     if state["streak"] >= 5 and not state["rest_used"]:
         state["rest_used"] = True
         state["streak"] = 0
